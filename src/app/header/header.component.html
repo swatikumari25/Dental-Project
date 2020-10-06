@@ -1,0 +1,94 @@
+
+    <header>
+        <h5 class="headerstyle">Dentalcare</h5>
+      </header>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark" *ngIf="router.url == '/Home'">
+        <a class="navbar-brand" routerLink="/">DentalCARE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" routerLink="/Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/Pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/Client">Clients</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/Carrer">Carrers</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/Contactus">Contact Us</a>
+            </li>    
+          </ul>
+        </div>  
+      </nav>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark" *ngIf="router.url == '/Pricing'">
+        <a class="navbar-brand pricingnavbarbrand" routerLink="/">PRICING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item pricingnavitem">
+              <a class="nav-link active" routerLink="/Home">Home</a>
+            </li>
+            <li class="nav-item pricingnavitem">
+              <a class="nav-link" routerLink="/Pricing">Pricing</a>
+            </li>  
+          </ul>
+        </div>  
+      </nav>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark" *ngIf="router.url == '/Carrer'">
+        <a class="navbar-brand pricingnavbarbrand" routerLink="/">CARRER</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item pricingnavitem">
+              <a class="nav-link active" routerLink="/Home">Home</a>
+            </li>
+            <li class="nav-item pricingnavitem">
+              <a class="nav-link" routerLink="/Pricing">Carrer</a>
+            </li>  
+          </ul>
+        </div>  
+      </nav>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark" *ngIf="router.url == '/Client'">
+        <a class="navbar-brand pricingnavbarbrand" routerLink="/">CLIENT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item pricingnavitem">
+              <a class="nav-link active" routerLink="/Home">Home</a>
+            </li>
+            <li class="nav-item pricingnavitem">
+              <a class="nav-link" routerLink="/Pricing">Client</a>
+            </li>  
+          </ul>
+        </div>  
+      </nav>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark" *ngIf="router.url == '/Contactus'">
+        <a class="navbar-brand pricingnavbarbrand" routerLink="/">CONTACT US</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item pricingnavitem">
+              <a class="nav-link active" routerLink="/Home">Home</a>
+            </li>
+            <li class="nav-item pricingnavitem">
+              <a class="nav-link" routerLink="/Pricing">Contactus</a>
+            </li>  
+          </ul>
+        </div>  
+      </nav>
+

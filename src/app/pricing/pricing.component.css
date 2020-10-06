@@ -1,0 +1,23 @@
+
+.top-right {
+    position: absolute;
+    top: 120px;
+    right: 30px;
+  }
+  .imagetextstyle{
+      font-style: italic;
+      position: absolute;
+      top: 150px;
+      right: 800px;
+      margin-top:3rem;
+      padding-left:2rem;
+  }
+  .imgstyle{
+    height:500px;
+    width:100%;
+}
+.btnstyle{
+    padding-left:2.7rem;
+    padding-right:2.7rem;
+}
+

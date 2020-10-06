@@ -1,0 +1,79 @@
+
+.top-right {
+    position: absolute;
+    top: 120px;
+    right: 30px;
+  }
+  .imagetextstyle{
+      font-style: italic;
+      position: absolute;
+      top: 150px;
+      left: 800px;
+      margin-top:2rem;
+  }
+  .buttonstyle{
+    position: absolute;
+    top: 300px;
+    left: 900px;
+    margin-top:2rem; 
+    padding:1rem 2rem 1rem 2rem;
+  }
+  .imgstyle{
+      height:500px;
+      width:100%;
+  }
+  .paratext{
+      margin-top:10px;
+  }
+  .paragraphtext{
+      font-style: italic;
+      font-size: 12px;
+  }
+  .cardimage{
+    height:400px;
+    width:100%;   
+  }
+  .cardtext{
+      text-align:center;
+      padding-top:5px;
+  }
+  .cardsmalltext{
+      font-size: 10px;
+      font-style: italic;
+      padding-left:5px;
+  }
+  .sidetext{
+      padding-top:5px;
+      padding-left:2rem;
+      color: grey;
+  }
+  .formstyle
+  {
+    padding-top:5px;
+    padding-left:5px; 
+    margin-right:20px; 
+  }
+  .lastrow{
+      padding-top:5rem;
+  }
+  .cardboldtext{
+    font-size: 20px;
+    font-style: italic;
+    padding-left:2rem;
+    color:grey;
+  }
+  .fontstyle {
+    font-size: 2.2rem;
+    margin-bottom:5rem;
+  }
+  .btnstyle{
+      margin-bottom: 2rem;
+  }
+  .btn-info:disabled {
+    background-color:lightslategray;
+    border-color:lightslategray;
+  }
+  .btn-success:disabled {
+    background-color: lightslategray;
+    border-color: lightslategray
+  }

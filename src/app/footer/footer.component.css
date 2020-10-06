@@ -1,0 +1,12 @@
+
+.footerstyle{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    margin-top:3rem;
+    padding-left:2rem;
+}
+
+.liststyle{
+    padding-left:1rem;;
+}
