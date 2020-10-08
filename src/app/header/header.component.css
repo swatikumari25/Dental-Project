@@ -7,15 +7,3 @@
     border-bottom: 1px solid dimgrey;
     margin-bottom: auto;
 }
-.navbar-brand {
-    margin-right: 30rem;
-}
-.nav-item{
-    padding-right:3rem
-}
-.pricingnavitem{
-    padding-right:0.2rem !important;
-}
-.pricingnavbarbrand {
-    margin-right: 60rem !important;
-}

@@ -1,98 +1,170 @@
-
-    <div class="view">
-      <img src="../assets/grayslake-il-dentist-office-outside.jpg"  class="imgstyle" alt="Dental Clinic">
-      <div>
-        <h3 class="black-text top-right">WE WILL TAKE CARE OF YOUR TEETH</h3>
-        <p class="black-text imagetextstyle">A dentist, also known as a dental surgeon, is a surgeon who specializes in dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.</p>
-        <button class="buttonstyle btn btn-primary"type="button" (click)="bookAppointment()">BOOK AN APPOINTMENT</button>
-      </div>
-    <div class="container paratext">
-      <p>OVER 10 YEARS</p>
-      <P>OF FAITHFUL WORK</P>
-      <div class="row">
-        <div class="col-md-8">
-       <p class="paragraphtext">Best Doctors: Connect with the Best Dentists in the country to get accurate diagnosis and the best possible treatment options for your condition. 
-      No wait time: You do not have to worry about waiting in line at a doctors clinic as the consultation starts exactly at the time chosen by you. 
-        Digital records: All your prescriptions from the doctor and medical records are digitized which gives you the convenience of accessing it from just about anywhere and at any time. </p>
-    <div class="card-deck">
-      <div class="card mb-4" *ngFor="let x of cardDetails">
-        <div class="view overlay">
-          <img class="card-img-top" src="{{x.img}}"
-            alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <p class="card-text">{{x.specialization}}</p>
-        </div>
-      </div>
+<div class="container containerstyle py-3 my-2">
+  <section class="p-md-1 mx-md-1">
+    <div class="bgimage">
+      <h2 class="black-text headlinetext">WE WILL TAKE CARE OF YOUR TEETH</h2>
+      <p class="black-text ptext">A dentist, also known as a dental surgeon, is a surgeon who specializes in
+        dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.</p>
+      <button class="btn btn-primary  btn-md butontext " (click)="bookAppointment()"> BOOK AN APPOINTMENT</button>
     </div>
-    </div> 
-        <div class="col-md-4">
-          <img class="cardimage" src="../assets/download.jpg">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="card">
-     <h3 class="cardtext">MEET OUR TEAM</h3>
-     <div class="row">
-       <div class="col-md-5 offset-md-1" *ngFor="let img of imgDetails">
-        <img class="card-img-top" src="{{img.image}}">
-        <p class="cardtext">{{img.name}}</p>
-        <p class="cardtext">{{img.specialization}}</p>
-        <a type="button"class="light-blue-text mx-5 ">
-          <mdb-icon fab icon="facebook" class="fontstyle"></mdb-icon>
-        </a>
-        <a type="button" class="light-blue-text mx-5">
-          <mdb-icon fab icon="twitter" class="fontstyle"></mdb-icon>
-        </a>
-        <a type="button" class="light-blue-text mx-5">
-          <mdb-icon fab icon="google-plus-g" class="fontstyle"></mdb-icon>
-        </a>
-       </div>
-     </div>
-    </div>
-    </div>
-    <div class="container">
-    <div class="view">
-      <img src="../assets/grayslake-il-dentist-office-outside.jpg"  class="imgstyle" alt="Dental Clinic">
-      <div>
-        <h3 class="black-text top-right">WE WILL TAKE CARE OF YOUR TEETH</h3>
-        <p class="black-text imagetextstyle">A dentist, also known as a dental surgeon, is a surgeon who specializes in dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.</p>
-        <button class="buttonstyle btn btn-primary" (click)="contactUs()"type="button">CONTACT US</button>
-      </div>
-    </div>
-    </div>
-    <div class="container">
-      <div class="card">
-      <h3 class="cardtext">OUR SERVICES</h3>
-      <div class="row">
-        <div class="col-md-3" *ngFor="let img of serviceDetails">
-         <img class="card-img-top" src="{{img.image}}">
-         <p class="cardtext">{{img.name}}</p>
-         <p class="cardsmalltext">{{img.specialization}}</p>
+  </section>
+</div>
+<div class="container pt-5 my-5 z-depth-1">
+  <section class="p-md-3 mx-md-5 text-center">
+    <h2 class="text-left mx-auto mb-4 pb-2">OVER 10 YEARS OF FAITHFUL WORK</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <p>Best Doctors: Connect with the Best Dentists in the country to get accurate diagnosis
+          and the best possible treatment options for your condition.
+          No wait time: You do not have to worry about waiting in line at a doctors clinic as the consultation starts
+          exactly at the time chosen by you.
+          Digital records: All your prescriptions from the doctor and medical records are digitized which gives you
+          the
+          convenience of accessing it from just about anywhere and at any time.</p>
+        <div class="row">
+          <div class="col-md-4" *ngFor="let x of cardDetails">
+            <div class="avatar w-100 white">
+              <img src="{{x.img}}" class="img-fluid rounded-circle z-depth-1" />
+            </div>
+            <div class="text-center mt-3">
+              <h6 class="font-weight-bold pt-2">{{x.specialization}}</h6>
+            </div>
+          </div>
         </div>
       </div>
-     </div>
-    </div>
-     <div class="container">
-       <div class="card">
-       <div class="row lastrow">
-         <div class="col-md-6">
-           <h3 class="sidetext">WHAT PEOPLE SAY ABOUT US</h3>
-           <p class="cardboldtext">Sabka Dentist treasures the best dental care in Bangalore who encourages people in embracing better oral health that can make them feel confident. Their treatment procedure includes diagnosis of oral diseases, dental trauma management, smile designing, root canal treatment, operative dentistry, cosmetic dentistry and a lot more.</p>
-         </div>
-       <div class="col-md-6">
-    <form class="formstyle" #login="ngForm" (ngSubmit)="completeLogin(login)">
-      <input type="text" [(ngModel)] ="subject" name="subject" required class="form-control mb-4" placeholder="Subject*">
-      <input type="email" [(ngModel)] ="email" name="email" required class="form-control mb-4" placeholder="E-mail*">
-      <input type="text" [(ngModel)] ="name" name="name" required class="form-control mb-4" placeholder="Name*">
-      <input type="text" [(ngModel)] ="mobNumber" name="mobNumber" required class="form-control mb-4" placeholder="Contact Number*">
-      <div class="form-group">
-          <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder=" Your Message"></textarea>
+      <div class="col-md-4">
+        <img class="cardimage" src="../assets/download.jpg">
       </div>
-      <button class="btn btn-success btn-block btnstyle" type="submit"[disabled]="!login.valid">Submit</button>
-    </form>
-         </div>
-       </div>
-     </div>
     </div>
+  </section>
+</div>
+<div class="container py-5 my-5 z-depth-1">
+  <section class="p-md-3 mx-md-5 text-center text-lg-left">
+    <h2 class="text-center font-weight-bold mb-4 pb-1">Meet Our Team</h2>
+    <div class="row">
+      <div class="col-lg-3 mb-4" *ngFor="let img of imgDetails">
+        <div class="card">
+          <div class="avatar w-100 white d-flex justify-content-center align-items-center">
+            <img src="{{img.image}}" class="img-fluid" />
+          </div>
+          <div class="card-body">
+            <p class="font-weight-bold my-2  d-flex justify-content-center align-items-center">{{img.name}}</p>
+            <p class="text-muted d-flex justify-content-center align-items-center">{{img.specialization}}</p>
+          </div>
+          <ul class="list-unstyled mb-5 d-flex justify-content-center align-items-center">
+            <a class="p-2 fa-lg fb-ic">
+              <i class="fab fa-facebook-f blue-text"> </i>
+            </a>
+            <a class="p-2 fa-lg tw-ic">
+              <i class="fab fa-twitter blue-text"> </i>
+            </a>
+            <a class="p-2 fa-lg ins-ic">
+              <i class="fab fa-instagram blue-text"> </i>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="container my-4">
+  <section class="dark-grey-text text-center">
+    <div class="row">
+      <div class="col-md-12 mb-4 columnstyle">
+        <div class="card card-image imgstyle bgimage">
+          <div class="text-black text-right d-flex align-items-right rgba-black-strong py-5 px-5 px-md-5 ">
+            <div>
+              <h3 class="py-3 font-weight-bold">
+                <strong>HOW WE CAN HELP</strong>
+              </h3>
+              <p class=" py-2 ">A dentist, also known as a dental surgeon, is a surgeon who specializes in
+                dentistry, the diagnosis, prevention, and treatment
+              </p>
+              <a class="btn btn-primary  btn-lg" (click)="contactUs()"> CONTACT US</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="container pt-5 my-5 z-depth-1">
+  <section class="p-md-3 mx-md-5 text-center">
+    <h2 class="text-center mx-auto font-weight-bold mb-4 pb-2">Our Services</h2>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let img of serviceDetails">
+        <div class="p-4">
+          <div class="avatar w-100 white d-flex justify-content-center align-items-center">
+            <img src="{{img.image}}" class="img-fluid rounded-circle z-depth-1 servicesimg" />
+          </div>
+          <div class="text-center mt-3">
+            <h6 class="font-weight-bold pt-2">{{img.name}}</h6>
+            <p class="text-muted">
+              <small>
+                {{img.specialization}}
+              </small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="container py-5 my-5 z-depth-1">
+  <section class="p-md-3 mx-md-5 text-center text-lg-left">
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="sidetext">WHAT PEOPLE SAY ABOUT US</h3>
+        <p class="cardboldtext">Sabka Dentist treasures the best dental care in Bangalore who encourages people in
+          embracing better oral health that can make them feel confident. Their treatment procedure includes diagnosis
+          of oral diseases, dental trauma management, smile designing, root canal treatment, operative dentistry,
+          cosmetic dentistry and a lot more.</p>
+      </div>
+      <div class="col-md-6">
+        <form class="formstyle" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+          <div *ngIf="profileForm.get('subject').errors && isSubmitted">
+            <div *ngIf="profileForm.get('subject').hasError('required')">
+              <span style="color: red;">Please Enter Subject.</span>
+            </div>
+          </div>
+          <input type="text" formControlName="subject" class="form-control mb-4" placeholder="Subject*">
+          <div *ngIf="profileForm.get('email').errors && isSubmitted">
+            <div *ngIf="profileForm.get('email').hasError('required')">
+              <span style="color: red;">Please Enter Email.</span>
+            </div>
+            <div *ngIf="profileForm.get('email').hasError('minlength')">
+              <span style="color: red;">The email requied atleast 5 characters.</span>
+            </div>
+            <div *ngIf="profileForm.get('email').hasError('maxlength')">
+              <span style="color: red;">The email requied only 80 characters.</span>
+            </div>
+            <div *ngIf="profileForm.get('email').hasError('pattern')">
+              <span style="color: red;">The Email is not valid.</span>
+            </div>
+          </div>
+          <input type="text" formControlName="email" class="form-control mb-4" placeholder="E-mail*">
+          <div *ngIf="profileForm.get('name').errors && isSubmitted">
+            <div *ngIf="profileForm.get('name').hasError('required')">
+              <span style="color: red;">Please Enter Name.</span>
+            </div>
+          </div>
+          <input type="text" formControlName="name" class="form-control mb-4" placeholder="Name*">
+          <div *ngIf="profileForm.get('number').errors && isSubmitted">
+            <div *ngIf="profileForm.get('number').hasError('required')">
+              <span style="color: red;">Please Enter Phone Number.</span>
+            </div>
+            <div *ngIf="profileForm.get('number').hasError('maxlength')">
+              <span style="color: red;">Phone Number requied only 10 characters.</span>
+            </div>
+            <div *ngIf="profileForm.get('number').hasError('pattern')">
+              <span style="color: red;">Only Numbers are allowed.</span>
+            </div>
+          </div>
+          <input type="text" formControlName="number" class="form-control mb-4" placeholder="Contact Number*">
+          <textarea class="form-control rounded-0" formControlName="message" rows="3"
+            placeholder=" Your Message"></textarea>
+      <button class="btn btn-success btn-block btnstyle" type="submit">Submit</button>
+      </form>
+    </div>
+</div>
+</section>
+</div>

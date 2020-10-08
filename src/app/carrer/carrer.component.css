@@ -15,7 +15,6 @@
       text-align:center;
   }
   .imageabovetextstyle{
-    font-style: italic;
     top: 100px;
     position: absolute;
     right: 500px;
@@ -26,6 +25,14 @@
   .imgstyle{
     height:500px;
     width:100%;
+}
+.rgba-black-strong {
+    height:500px;
+    width:100%; 
+}
+.columnstyle{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
 }
 .btnstyle{
     padding-left:3rem;
@@ -38,7 +45,6 @@
 }
 .paragraphstyle{
     font-size: large;
-    font-style: italic;
 }
 .dropstyle{
     border:1px solid black;
@@ -57,5 +63,6 @@ select#selecteddropdown {
     outline:0px;
     width:100%
 }
+
 
 

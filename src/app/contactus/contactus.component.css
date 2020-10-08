@@ -31,11 +31,11 @@
     padding-left:2rem;
     padding-right:2rem;
     margin-bottom:3rem;
+    margin-top:3rem;
 }
 .cardtext{
     text-align:left;
     padding-top:5px;
-    font-style: italic;
 }
 
 .btn-info:disabled {

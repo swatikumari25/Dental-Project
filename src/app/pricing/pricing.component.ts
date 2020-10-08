@@ -8,18 +8,21 @@ import {Router} from '@angular/router';
 export class PricingComponent implements OnInit {
   cardDetails = [{
     img:'../assets/101991_SamadnyaSunilJawalekar_24b27d28-7ddc-4147-8113-752446b4d888.png',
-    specialization:'Sabka Dentist treasures the best dental care in Bangalore who encourages people in embracing better oral health that can make them feel confident.',
-    button:'Make An Appointment'
+    specialization:'Sabka Dentist treasures the best dental care in bangalore who encourages people in embracing better oral health that can make them feel.',
+    button:'Make An Appointment',
+    cardheader:'Preventive Care'
   },
   {
     img:'../assets/101991_SamadnyaSunilJawalekar_24b27d28-7ddc-4147-8113-752446b4d888.png',
-    specialization:'Sabka Dentist treasures the best dental care in Bangalore who encourages people in embracing better oral health that can make them feel confident.',
-    button:'Make An Appointment'
+    specialization:'Sabka Dentist treasures the best dental care in bangalore who encourages people in embracing better oral health that can make them feel.',
+    button:'Make An Appointment',
+    cardheader:'Cosmetic Solutions'
   },
   {
     img:'../assets/101991_SamadnyaSunilJawalekar_24b27d28-7ddc-4147-8113-752446b4d888.png',
-    specialization:'Sabka Dentist treasures the best dental care in Bangalore who encourages people in embracing better oral health that can make them feel confident.',
-    button:'Make An Appointment'
+    specialization:'Sabka Dentist treasures the best dental care in bangalore who encourages people in embracing better oral health that can make them feel.',
+    button:'Make An Appointment',
+    cardheader:'Restorative Solutions'
   }]
 
   constructor(private router:Router) { }

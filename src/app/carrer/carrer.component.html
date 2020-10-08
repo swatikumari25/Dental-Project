@@ -1,31 +1,53 @@
 
-      <div class="view">
-        <img src="../../assets/download (1).jpg"  class="imgstyle" alt="Dental Clinic">
-        <div>
-            <h3 class="black-text imageabovetextstyle"> OUR CURRENT VACANCIES LIST</h3>
-          <p class="black-text imagetextstyle">A dentist, also known as a dental surgeon, is a surgeon who specializes in dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.Best Doctors: Connect with the Best Dentists in the country to get accurate diagnosis and the best possible treatment options for your condition. 
-            No wait time: You do not have gives you the convenience of accessing it from just about anywhere and at any time.</p>
+<div class="container my-4">
+  <section class="dark-grey-text text-center">
+    <div class="row">
+      <div class="col-md-12 mb-4 columnstyle">
+        <div class="card card-image imgstyle" style="background-image: url(../../assets/carrer.jpg);">
+          <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 px-md-5 rounded">
+            <div>
+              <h3 class="py-3 font-weight-bold">
+                <strong> OUR CURRENT VACANCIES LIST</strong>
+              </h3>
+              <p class=" px-2 ">A dentist, also known as a dental surgeon, is a surgeon who specializes in
+                dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.Best Doctors:
+                Connect with the Best Dentists in the country to get accurate
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container">
-          <h3 class="text">DENTIST</h3>
-    <div class="row">
-    <div class="col-md-3" *ngFor="let x of cardDetails">
-            <div class="view overlay">
-              <img class="card-img-top" src="{{x.img}}"
-                alt="Card image cap">
-            </div>
-    </div>
-            <div class="col-md-9">
-                <p class="paragraphstyle">A dentist, also known as a dental surgeon, is a surgeon who specializes in dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.Best Doctors: Connect with the Best Dentists in the country to get accurate diagnosis and the best possible treatment options for your condition. 
-                    No wait time: You do not have gives you the convenience of accessing it from just about anywhere and at any time A dentist, also known as a dental surgeon, is a surgeon who specializes in dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.Best Doctors: Connect with the Best Dentists in the country to get accurate diagnosis and the best possible treatment options for your condition. 
-                    No wait time: You do not have gives you the convenience of accessing</p>
-            </div>
-        </div>
 </div>
-<div class="container">
+</section>
+</div>
+<div class="container py-1 my-4 z-depth-1">
+  <section class="p-md-3 mx-md-5 text-center text-lg-left">
+    <p class="font-weight-bold my-2  d-flex justify-content-center align-items-center">DENTIST</p>
+    <div class="row">
+      <div class="col-md-3" *ngFor="let x of cardDetails">
+        <div class="card z-depth-1">
+          <div class="avatar w-100 white d-flex justify-content-center align-items-center">
+            <img src="{{x.img}}" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <p class="paragraphstyle">A dentist, also known as a dental surgeon, is a surgeon who specializes in dentistry,
+          the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.Best Doctors: Connect
+          with the Best Dentists in the country to get accurate diagnosis and the best possible treatment options for
+          your condition.No wait time: You do not have gives you the convenience of accessing it from just about anywhere and at any
+          time A dentist, also known as a dental surgeon, is a surgeon who specializes in dentistry, the diagnosis,
+          prevention, and treatment of diseases and conditions of the oral cavity.Best Doctors: Connect with the Best
+          Dentists in the country to get accurate diagnosis and the best possible treatment options for your condition.
+          No wait time: You do not have gives you the convenience of accessing</p>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="container py-1 my-4 z-depth-1">
+  <section class="p-md-3 mx-md-5 text-center text-lg-left">
     <div class="dropstyle">
-    <select name="NURSE" id="selectedvalue">
+      <select name="NURSE" id="selectedvalue">
         <option value="nurse">NURSE</option>
         <option value="doctor">DOCTOR</option>
         <option value="dentist">DENTIST</option>
@@ -33,14 +55,12 @@
       </select>
     </div>
     <div class="dropstyle">
-        <select name="DOCTOR" id="selecteddropdown">
-            <option value="doctor">DOCTOR</option>
-            <option value="nurse">NURSE</option>
-            <option value="dentist">DENTIST</option>
-            <option value="physio">PHYSIO</option>
-          </select>
-        </div>
+      <select name="DOCTOR" id="selecteddropdown">
+        <option value="doctor">DOCTOR</option>
+        <option value="nurse">NURSE</option>
+        <option value="dentist">DENTIST</option>
+        <option value="physio">PHYSIO</option>
+      </select>
+    </div>
+  </section>
 </div>
-
-
-

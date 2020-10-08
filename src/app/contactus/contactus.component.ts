@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormControl,Validators } from '@angular/forms';
-import {FooterComponent} from '../footer/footer.component';
+import { FormGroup, FormBuilder,FormControl,Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contactus',
@@ -8,24 +8,36 @@ import {FooterComponent} from '../footer/footer.component';
   styleUrls: ['./contactus.component.css']
 })
 export class ContactusComponent implements OnInit {
-  
-  profileForm = new FormGroup({
-  name:new FormControl('',Validators.required),
-  number: new FormControl('',Validators.required),
-  email: new FormControl('',Validators.required),
-  address: new FormControl('',Validators.required),
-  date: new FormControl('',Validators.required),
-  time: new FormControl('',Validators.required),
-  
-});
-  constructor() { }
+  profileForm: FormGroup; 
+  isSubmitted: boolean = false; 
+  constructor(private formBuilder: FormBuilder) { 
+    this.profileForm = this.formBuilder.group({
+      name:new FormControl('',Validators.required),
+      number: new FormControl('', [  
+      Validators.required,    
+      Validators.maxLength(10),  
+      Validators.pattern('^[0-9]*$')]),  
+      email: new FormControl('', [  
+      Validators.required,  
+      Validators.minLength(5),  
+      Validators.maxLength(80),  
+      Validators.pattern("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$")  
+    ]),
+    address: new FormControl('',Validators.required),
+      date: new FormControl('',Validators.required),
+      time: new FormControl('',Validators.required),
+      comment: new FormControl(''),
+  });
+}
 
   ngOnInit(): void {
   }
-  onSubmit() {
-console.log("Your Name is",this.profileForm.get('name').value);
-alert("Your Form has Submitted");
-this.profileForm.reset(); 
-  }
 
+  onSubmit() {
+    this.isSubmitted = true;  
+    if(this.profileForm.valid){        
+      console.log("User Registration Form Submit", this.profileForm.value); 
+      // this.profileForm.reset();  
+    }
+  }
 }

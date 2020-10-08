@@ -1,16 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-import {NgForm} from '@angular/forms'
+import {NgForm} from '@angular/forms';
+import { FormGroup, FormBuilder,FormControl,Validators } from '@angular/forms';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  subject;
-  email;
-  name;
-  mobNumber;
   cardDetails = [{
     img:'../assets/101991_SamadnyaSunilJawalekar_24b27d28-7ddc-4147-8113-752446b4d888.png',
     specialization:'Workers'
@@ -88,7 +85,26 @@ export class HomeComponent implements OnInit {
   },
   ]
 
-  constructor(public router:Router) { }
+    profileForm: FormGroup; 
+    isSubmitted: boolean = false; 
+    constructor(private formBuilder: FormBuilder,public router:Router) { 
+      this.profileForm = this.formBuilder.group({
+        name:new FormControl('',Validators.required),
+        number: new FormControl('', [  
+        Validators.required,    
+        Validators.maxLength(10),  
+        Validators.pattern('^[0-9]*$')]),  
+        email: new FormControl('', [  
+        Validators.required,  
+        Validators.minLength(5),  
+        Validators.maxLength(80),  
+        Validators.pattern("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$")  
+      ]),
+      subject: new FormControl('',Validators.required),
+        message: new FormControl(''),
+    });
+  }
+
 
   ngOnInit(): void {
   }
@@ -100,15 +116,11 @@ contactUs() {
 bookAppointment() {
   this.router.navigate(['/Appointment']);
 }
-completeLogin(login :NgForm){ 
-  if((this.subject && this.subject.length > 0) && (this.email && this.email.length > 0) &&
-  (this.name && this.name.length > 0) && (this.mobNumber && this.mobNumber.length > 0)) {
- alert("Your Form has Submitted");
- console.log("Subject",this.subject, "Email",this.email, "Name",this.name, "Mobile",this.mobNumber);
- }
- else {
-   alert("Please Fill the form");
- }  
- login.reset()    
- } 
+onSubmit() {
+  this.isSubmitted = true;  
+  if(this.profileForm.valid){        
+    console.log("User Registration Form Submit", this.profileForm.value); 
+    // this.profileForm.reset();  
+  }
+}
 }

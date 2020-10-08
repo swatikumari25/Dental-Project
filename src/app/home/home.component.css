@@ -33,18 +33,9 @@
     height:400px;
     width:100%;   
   }
-  .cardtext{
-      text-align:center;
-      padding-top:5px;
-  }
-  .cardsmalltext{
-      font-size: 10px;
-      font-style: italic;
-      padding-left:5px;
-  }
   .sidetext{
       padding-top:5px;
-      padding-left:2rem;
+      padding-left:0px;
       color: grey;
   }
   .formstyle
@@ -53,13 +44,10 @@
     padding-left:5px; 
     margin-right:20px; 
   }
-  .lastrow{
-      padding-top:5rem;
-  }
   .cardboldtext{
     font-size: 20px;
     font-style: italic;
-    padding-left:2rem;
+    padding-left:0px;
     color:grey;
   }
   .fontstyle {
@@ -68,6 +56,7 @@
   }
   .btnstyle{
       margin-bottom: 2rem;
+      margin-top:2rem;
   }
   .btn-info:disabled {
     background-color:lightslategray;
@@ -77,3 +66,55 @@
     background-color: lightslategray;
     border-color: lightslategray
   }
+  .rgba-black-strong {
+    height:500px;
+    width:100%; 
+    background-color: revert;
+}
+.columnstyle{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.center {
+  float: right;
+  width: 400px;
+  padding-left:2rem;
+  padding-top: 7rem;
+}
+.textalign{
+  float: right;
+  width: 400px;
+  padding-left:2rem;
+  padding-top: 6rem;
+}
+.containerstyle {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.servicesimg {
+  max-width: 150px;
+  height: 150px;
+}
+.bgimage {
+  background-image: url(../../assets/1493726850smile-dental-clinic-ahmedabad-1441523539-55ebe753a1553.jpg);
+ height:500px;
+}
+
+.headlinetext{
+ float:right;
+ margin-top:7rem;
+}
+.ptext {
+  float:right;
+  margin-left:10rem;
+  margin-top:10px;
+}
+.butontext
+{
+  float:right;
+  width:300px;
+  margin-left:15rem;
+  margin-top:2rem;
+  margin-right:3rem;
+}
